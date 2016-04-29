@@ -9,26 +9,34 @@ namespace Lect_13_Person_Generator
 {
     public class PersonSaver
     {
-        private List<Filter> myfilter;
+        private Filter myfilter;
+        private string outputpath;
 
         public PersonSaver(string OutputPath)
         {
-            using (StreamWriter sw = File.CreateText(OutputPath)) ;
+            outputpath = OutputPath;
+            using (StreamWriter sw = File.CreateText(outputpath)) ;
         }
 
 
         public PersonSaver(Filter MyFilter, string OutputPath)
             : this(OutputPath)
         {
-
+            myfilter=MyFilter;
         }
 
-
-
-
-        public void c_NewPersonGenerated(Person sender, EventArgs e)
+        public void  SavePerson(Person GeneratedPerson, EventArgs args)
         {
-
+            string fullname = (GeneratedPerson.name+" "+GeneratedPerson.surname);
+            if (myfilter.Apply(fullname))
+            {
+                using (StreamWriter sw = File.AppendText(outputpath))
+                {
+                    sw.WriteLine(fullname);
+                }
+            }
         }
+
+
     }
 }

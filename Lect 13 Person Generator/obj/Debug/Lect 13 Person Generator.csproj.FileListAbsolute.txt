@@ -1,0 +1,6 @@
+d:\AutoTraining\Lect 13 Person Generator\Lect 13 Person Generator\bin\Debug\Lect 13 Person Generator.exe.config
+d:\AutoTraining\Lect 13 Person Generator\Lect 13 Person Generator\obj\Debug\Lect 13 Person Generator.csprojResolveAssemblyReference.cache
+d:\AutoTraining\Lect 13 Person Generator\Lect 13 Person Generator\bin\Debug\Lect 13 Person Generator.exe
+d:\AutoTraining\Lect 13 Person Generator\Lect 13 Person Generator\bin\Debug\Lect 13 Person Generator.pdb
+d:\AutoTraining\Lect 13 Person Generator\Lect 13 Person Generator\obj\Debug\Lect 13 Person Generator.exe
+d:\AutoTraining\Lect 13 Person Generator\Lect 13 Person Generator\obj\Debug\Lect 13 Person Generator.pdb
